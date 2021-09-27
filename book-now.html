@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name='viewport' content='width=device-width'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Martian Splendour Resort | Book</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+
+    <nav id="main-menu" class="flex space-between sm-column relative">
+        <div id="logo" class="flex center-y">
+            <a href="index.html">
+                <img src="images/logo-5.png" alt="Resort company logo">
+            </a>
+        </div>
+        <div class="flex center-y sm-column bg-primary">
+            <!-- Hamburger menu for mobile devices -->
+            <label id="nav-toggle" class="flex center-y" for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <ul class ="flex sm-column lg-row center-y">
+                <li><a href="about.html">About</a></li>
+                <li><a href="accommodation.html">Accommodation</a></li>
+                <li><a href="things-to-do.html">Things to Do</a></li>
+                <li id="book-btn" class="active"><a href="book-now.html">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section class="banner bg-img zoom-2" style="background-image: url(images/hero-7.jpg); position: relative; background-position: bottom;">
+        <div class="container overlay flex center-x center-y" style="position: absolute;">
+            <h1>Book A Trip</h1>
+        </div>
+    </section>
+
+    <!-- Header with informational text -->
+
+    <section class="container big-pad-top pad-bottom">
+        <h2 class="text-primary">Be One of The First to Visit Mars</h2>
+        <p> 
+            We are offering an experience like no other. A week-long spaceship cruise to Mars. A week-long stay at a Martian Resort and finally, a week-long cruise back to Earth. Turn your wildest dreams into realiy and be sure not to miss this once-in-a-lifetime oppurtunity. 
+        </p>
+    </section>
+
+    <!-- BOOKING FORM -->
+
+    <section class="container big-margin-bottom box-shadow" style="margin-bottom: 80px;">
+        <div id="form-frame">
+            <form id="booking-form" class="flex sm-column" action="bookingForm.php" method="get">
+                <!-- Personal Details Section -->
+                <div class="form-column">
+                    <h3 class="small-pad-bottom">Personal Details</h3>
+
+                    <label for="f-name">First Name</label> 
+                    <p class="input-error-message">Please fill this field</p>
+                    <input type="text" id="f-name" name="f-name" placeholder="John">
+    
+                    <label for="l-name">Last Name</label>
+                    <p class="input-error-message">Please fill this field</p>
+                    <input type="text" id="l-name" name="l-name" placeholder="Smith">
+    
+                    <label for="email">Email</label>
+                    <p class="input-error-message">Please fill this field</p>
+                    <input type="email" id="email" name="email" placeholder="johnsmith@gmail.com">
+    
+                    <label for="p-number">Phone Number</label>
+                    <p class="input-error-message">Please fill this field</p>
+                    <input type="tel" id="p-number" name="p-number" placeholder="+61 2 3743 7119">
+                </div>
+
+                <!-- Booking Details Section -->
+
+                <div class="form-column">
+                    <h3 class="small-pad-bottom">Booking Details</h3>
+                    <label for="room-choice">Accommodation</label>
+                        <select id="room-choice">
+                            <option>Standard Suite</option>
+                            <option>Deluxe Suite</option>
+                            <option>Villa</option>
+                        </select>
+
+                        <label for="guest-number">Adult Guests</label>
+                        <select id="guest-number">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+
+                        <label>Special Dietry Requirements?</label>
+                        <p class="input-error-message">Please fill this field</p>
+                        <div class="flex">
+                            <label for="special-diet">Yes</label>
+				            <input type="radio" id="special-diet" name="dietry-needs" value="special-diet">
+
+                            <label for="no-special-diet">No</label>
+                            <input type="radio" id="no-special-diet" name="dietry-needs" value="no-special-diet">
+                        </div>
+
+                        <input type="submit" id="submit-btn" name="submit-btn" value="BOOK NOW">
+                        <p>*After booking, our team will be in contact with you shortly</p>  
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container pad-top">
+            <div class="flex lg-row sm-column space-between">
+                <ul>
+                    <li class="f-title"><a href="about.html">About</a></li>
+                    <li><a href="coming-soon.html">Location</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="coming-soon.html">Getting Here</a></li>
+                    <li><a href="coming-soon.html">Facts and Facilities</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+                <ul>
+                    <li class="f-title"><a href="accommodation.html">Accommodation</a></li>
+                    <li><a href="coming-soon.html">Standard Suite</a></li>
+                    <li><a href="coming-soon.html">Deluxe Suite</a></li>
+                    <li><a href="coming-soon.html">Villa</a></li>
+                </ul>
+                <ul>
+                    <li class="f-title"><a href="things-to-do.html">Things to Do</a></li>
+                    <li><a href="coming-soon.html">Land Activites</a></li>
+                    <li><a href="coming-soon.html">Mars Tours</a></li>
+                    <li><a href="coming-soon.html">Space Workshops</a></li>
+                    <li><a href="coming-soon.html">Leisure</a></li>
+                    <li><a href="coming-soon.html">Eat & Drink</a></li>
+                </ul>
+                <ul>
+                    <li class="f-title"><a href="coming-soon.html">Contact Us</a></li>
+                    <li><a href="coming-soon.html">Social Media</a></li>
+                    <li><a href="coming-soon.html">Reservation/Booking</a></li>
+                    <li><a href="coming-soon.html">Email</a></li>
+                    <li class="f-title"><a href="book-now.html">Book Now</a></li>
+                </ul>
+            </div>
+            <hr>
+            <p class="small-pad-top small-pad-bottom">Martian Splendour Resort, Copyright &copy; 2020</p>
+        </div>
+    </footer>
+
+
+    <!-- Javascript for booking form -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>

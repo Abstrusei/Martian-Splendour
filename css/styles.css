@@ -1,0 +1,702 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+body {
+    font-family: 'Roboto Condensed',Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+    font-size: 55px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h3{
+    color:#8C1207;
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+p {
+    text-align: justify;
+    line-height: 28px;
+}
+
+.abolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.box-shadow {
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.15);
+    border-radius: 5px;
+}
+
+/* Flexbox */
+
+.flex{
+    display: flex;
+}
+
+.center-y {
+    align-items: center;
+}
+
+.center-x {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+/* Colour Scheme */
+
+.text-primary {
+    color: #F2522E
+}
+
+.bg-primary {
+    background-color: #F2522E;
+    color:white;
+}
+
+.text-secondary {
+    color: white;
+}
+
+.bg-secondary {
+    background: white;
+    color: #F2522E
+}
+
+.text-tertiary {
+    color: #8C1207;
+}
+
+.bg-secondary {
+    background: #8C1207;
+    color: white;
+}
+
+/* Box Model */
+
+.pad-x{
+    padding: 0 50px;
+}
+
+.pad-y{
+    padding: 50px 0;
+}
+
+.small-pad-top {
+    padding-top: 20px;
+}
+
+.pad-top {
+    padding-top: 50px;
+}
+
+.big-pad-top {
+    padding-top: 80px;
+}
+
+.small-pad-bottom {
+    padding-bottom: 20px;
+}
+
+.pad-bottom {
+    padding-bottom: 50px;
+}
+
+.big-pad-bottom {
+    padding-bottom: 80px;
+}
+
+.margin {
+    margin: 50px;
+}
+
+.small-margin-top {
+    margin-top: 20px;
+}
+
+.margin-top {
+    margin-top: 50px;
+}
+
+.big-margin-top {
+    margin-top: 80px;
+}
+
+.small-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 50px;
+}
+
+.big-margin-bottom {
+    margin-bottom: 80px;
+}
+
+
+/* Cards */
+
+.card-frame {
+    display: flex;
+    flex-direction: column;
+    height: 520px;
+    width: 100%;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.card-img{
+    height:40%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-frame .btn {
+    background: #8C1207;
+}
+
+.btn-section {
+    border: 1px solid black;
+    position: relative;
+    justify-content: center;
+}
+
+.card-frame .container {
+    flex: 1;
+    padding-bottom: 30px;
+}
+
+.card-frame p {
+    flex:1;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.card-frame h2 {
+    flex: 1;
+}
+
+.card-frame a:hover {
+    background: rgb(109, 15, 7)
+}
+
+/* Makes sure 'filler cards' (created to maintain 3 column format) are unseen */
+.filler-card {
+    opacity: 0;
+}
+
+.container{
+    width: 85%;
+    /* line below stops text from being harshly alligned to the left of the page */
+    margin: 0 auto;
+}
+
+/* MAIN MENU */
+#logo img {
+    height: 80px;
+    display: block;
+    margin-left: 5%;
+}
+
+#main-menu li{
+    padding: 1.3rem 0;
+    font-size: 16px;
+}
+
+#main-menu {
+    background-color: #F2522E;
+    height: 80px;
+    position: sticky;
+    top: 0px;
+    /* Ensures navbar is stacked on top of everything */
+    z-index: 1;
+}
+
+#main-menu a {
+    color:white;
+}
+
+#main-menu ul {
+    text-transform: uppercase;
+    list-style: none;
+}
+
+#main-menu li a:hover {
+    color: rgb(204, 197, 197);
+}
+
+#main-menu .active a {
+    color: rgb(204, 197, 197);
+}
+
+/* Hamburger menu */
+#hamburger{
+    display: none;
+}
+
+#toggle,
+#nav-toggle{
+    display: none;
+}
+
+/* HERO/BANNER */
+
+.hero, .hero-2, .banner {
+    text-align: center;
+    width: 100%;
+    min-height:45vh;
+}
+
+.bg-img, .card-img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.btn {
+    background: black;
+    padding: 15px;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background: rgb(19, 19, 19);
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.45);
+    height: 100%;
+    width: 100%;
+}
+
+
+/* BOOKING FORM */
+
+#form-frame {
+    min-height: 500px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.form-column {
+    margin: 40px 0;
+}
+
+.form-column label {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.form-column input{
+    margin-bottom: 20px;
+    height:30px;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.form-column input[type=radio] {
+    margin-bottom: 20px;
+    height:20px;
+}
+
+.form-column select{
+    margin-bottom: 20px;
+    height:30px;
+    width: 100%;
+}
+
+form p {
+    color: grey;
+    font-size: 14px;
+}
+
+#submit-btn {
+    height: 50px;
+    color: white;
+    background: black;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+.input-error-border {
+    border: 1px solid red;
+}
+
+.input-error-message {
+    color: red;
+    display: none;
+}
+
+
+
+/* FUN FACTS  */
+
+.fun-facts {
+    flex-direction: column;
+}
+
+.fun-facts h1 {
+    font-style: italic;
+    color: black;
+}
+
+.fun-facts p {
+    color: lightgrey;
+    font-size: 20px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+#next-fact-btn {
+    display: none;
+}
+
+/* *GALLERY */
+
+.gallery .card-container{
+    flex-wrap: wrap;
+}
+.gallery-item{
+    width: 300px;
+    height: 200px;
+}
+
+.gallery .card-frame {
+    height: 208px;
+}
+
+.gallery .card-frame .card-img {
+    height: 220px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+#lightbox-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    display: none;
+}
+
+#lightbox {
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    height: 80vh;
+    border-radius: 8px;
+    position: relative;
+}
+
+#lightbox-controls {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lightbox-control{
+    cursor: pointer;
+    color: #fff;
+    font-size: 64px;
+}
+
+#lightbox-close-btn{
+    position: absolute;
+    top: 10px;;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 11;
+}
+
+/* REFERENCES */
+
+#references a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #F2522E;
+}
+
+/* FOOTER */
+
+footer {
+    color:#fff;
+    background-color:black;
+}
+
+footer ul {
+    list-style: none;
+    color: white;
+}
+
+footer li {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.f-title a {
+    text-transform: uppercase;
+    color: rgb(116, 114, 114);
+}
+
+hr {
+    border: 1px solid rgb(116, 114, 114);
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media (max-width: 767px) {
+    footer li {
+        text-align: center;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    #main-menu ul {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.15);
+        width: 100%;
+    }
+
+    #hamburger{
+        display: flex;
+    }
+
+    #nav-toggle {
+        display: flex;
+        padding-right: 20px;
+        font-size: 32px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    #toggle:checked + ul{
+        display: flex;
+    }
+
+    .sm-column {
+        flex-direction: column;
+    }
+
+    /* Ensures edges of form frame are left untouched */
+    .form-column {
+        margin: 0 20px;
+    }
+
+    /* Resizes certain cards for small screen */
+    .sm-card-resize {
+        height: 280px;
+    }
+   
+    /* Resizing text for hero and banner sections */
+    h1 {
+        font-size: 35px;
+        font-weight: bolder;
+    }
+    
+    h2{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .fun-facts p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    /* Resizes lightbox size */
+    #lightbox {
+        height: 45vh;
+        width: 100%
+    }
+
+    /* Makes sure 'filler cards' do not leave white space*/
+    .filler-card {
+        display:none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    /* GENERAL */
+    .hero {
+        height:85vh;
+    }
+
+    .banner {
+        height: 45vh;
+    }
+
+    .flex.lg-row {
+        flex-direction: row;
+    }
+
+    .flex.lg-column {
+        flex-direction: column;
+    }
+    
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lg-column-2 {
+        width: 48.5%
+    }
+
+    .lg-column-3 {
+        width: 31%;
+    }
+
+    /* Prevents 'cards' from having bottom margin on larger devices */
+    .sm-column {
+        margin-bottom: 0px;
+    }
+
+    /* Animations & Transitions*/
+    .zoom {
+        background-size: 100%;
+        transition: background-size 1s;
+        transition-timing-function: ease-out;
+    }
+    .zoom:hover {
+        background-size: 120%;
+    }
+
+    .zoom-2 {
+        background-size: cover;
+        animation-name: slow-zoom;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes slow-zoom {
+        from {background-size: 100%;}
+        to {background-size: 115%;}
+    }
+
+    /* Text Alignment */
+
+    .lg-align-left {
+        text-align: left;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    /* NAVBAR */
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    #logo img {
+        display: inline;
+        margin-left: 100px;
+    }
+
+    #main-menu ul {
+        align-items: center;
+        margin-right: 80px;
+    }
+
+    #main-menu li {
+        padding: 0 20px;
+    }
+
+    #book-btn a{
+        background: #8C1207;
+        cursor: pointer;
+        color:white;
+        display: inline-block;
+        border-radius: 4px;
+        padding: 10px;
+    }
+
+    #book-btn a:hover {
+        background-color: rgb(109, 15, 7) ;
+    }
+
+    #book-btn.active a {
+        color: white;
+        border: 2px solid white;
+    }
+
+    /* Accounts navigation bar height for hero height */
+    .hero-2 {
+        height: calc(100vh - 80px);
+    }
+
+    /* Booking Form */
+    .form-column {
+        padding: 0 50px;
+        width: 50%;
+    }
+    
+}
